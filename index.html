@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Le Saigon Callian","servesCuisine":["Vietnamienne","Asiatique"],"telephone":"+33494503802","address":{"@type":"PostalAddress","streetAddress":"Centre Agora, RD562","addressLocality":"Callian","postalCode":"83440","addressCountry":"FR"},"priceRange":"€€","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"315"}}
+{"@context":"https://***@type":"Restaurant","name":"Le Saigon Callian","servesCuisine":["Vietnamienne","Asiatique"],"telephone":"+334****3802","address":{"@type":"PostalAddress","streetAddress":"Centre Agora, RD562","addressLocality":"Callian","postalCode":"83440","addressCountry":"FR"},"priceRange":"€€","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"17:30","closes":"22:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"315"}}
 </script>
 <style>
 :root{
@@ -97,7 +97,8 @@ section{padding:64px 0}
 #panier{background:var(--vert);color:var(--pierre);border-radius:14px;padding:16px;margin-top:12px;font-size:15px}
 /* galerie */
 .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-@media(max-width:700px){.gal{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.gal{grid-template-columns:1fr 1fr}.gal img:last-child{grid-column:1/-1;height:200px}}
+@media(max-width:430px){.nav-cta .btn-pierre{font-size:0;gap:0;padding:9px 12px}.nav-cta .btn-pierre:before{content:'📞';font-size:16px}.logo{font-size:15px}.tampon{display:none}}
 .gal img{width:100%;height:240px;object-fit:cover;border-radius:16px}
 /* infos */
 .infos{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -124,6 +125,7 @@ footer{background:var(--vert);color:var(--pierre);padding:36px 0;font-size:14px}
 </style>
 </head>
 <body>
+<div style="background:var(--rouge);color:#fff;text-align:center;font-weight:700;font-size:14px;padding:9px 12px;letter-spacing:.02em">−10% DÈS 30€ D'ACHAT <span style="opacity:.8;font-weight:400">· hors sushis &amp; boissons · offre à valider avec le patron</span></div>
 
 <header>
 <div class="topbar">
@@ -195,6 +197,18 @@ footer{background:var(--vert);color:var(--pierre);padding:36px 0;font-size:14px}
 <div class="dish" data-tags="veggie"><div><h4>Tofu citronnelle — 12,50€</h4><p>Wok, légumes, riz jasmin.</p><div class="tags"><span class="tag veggie">VEGGIE</span></div><button class="add" data-name="Tofu citronnelle">+ Ajouter</button></div><div class="price">🌱</div></div>
 <div class="dish" data-tags="epice"><div><h4>Bœuf basilic thaï — 14,50€</h4><p>Wok flambé, piment, basilic.</p><div class="tags"><span class="tag epice">🌶️🌶️ 2</span></div><button class="add" data-name="Boeuf basilic">+ Ajouter</button></div><div class="price">🔥</div></div>
 <div class="dish" data-tags="midi sign"><div><h4>Formule midi — 15,90€</h4><p>Plat + nems + dessert du jour. Lun-Sam.</p><div class="tags"><span class="tag sign">MIDI</span></div><button class="add" data-name="Formule midi">+ Ajouter</button></div><div class="price">☀️</div></div>
+</div>
+
+<div class="collect">
+<h3 class="be">À BOIRE AVEC ÇA ?</h3>
+<p style="margin:8px 0 4px">Bières pression &amp; bouteilles · softs 33cl · thés glacés maison · café gourmand · jus de fruits. Carte complète et prix sur place — demande sur WhatsApp.</p>
+<div class="badges" style="margin:12px 0 0">
+<div class="badge">🍺 Bières</div>
+<div class="badge">🥤 Softs</div>
+<div class="badge">🍵 Thés glacés maison</div>
+<div class="badge">☕ Café</div>
+<div class="badge">🧃 Jus</div>
+</div>
 </div>
 
 <div class="collect">
